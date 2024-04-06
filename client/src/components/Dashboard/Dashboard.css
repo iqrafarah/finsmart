@@ -1,0 +1,430 @@
+.dashboard-main {
+  padding: 20px;
+  width: 100%;
+}
+
+.dashboard-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.dashboard-item {
+  box-shadow: inset rgba(0, 0, 0, 0.16) 0 0 2px 0px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 44%;
+}
+
+.dashboard-title {
+  font-size: 14.7px;
+  font-weight: 550;
+  color: rgb(59 130 246);
+}
+
+.amount {
+  font-size: 18px;
+  font-weight: bold;
+}
+.dashboard-sidebar {
+  padding: 20px;
+}
+.dashboard-sidebar h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.lesson-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.lesson-container,
+.goals-container {
+  max-height: 25em;
+  overflow: auto;
+}
+.goals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.dashboard-sidebar {
+  box-shadow: inset rgba(0, 0, 0, 0.16) 0 0 2px 0px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.chart-container {
+  padding: 20px;
+  background-color: white;
+  box-shadow: inset rgba(0, 0, 0, 0.16) 0 0 2px 0px;
+  border-radius: 15px;
+  width: 100%;
+  max-height: 41%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 20px 0;
+}
+
+.create-new {
+  opacity: 0;
+  visibility: hidden;
+  background-color: white;
+  width: 350px;
+  height: fit-content;
+  padding: 20px;
+  position: absolute;
+  top: 20% !important;
+  left: 5%;
+  border: 1px #e6e6e6 solid;
+  border-radius: 10px;
+}
+.top-header .bx-plus {
+  position: relative;
+  top: 2px;
+  left: 0;
+}
+.goal-active {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.create-new h3 {
+  margin-bottom: 10px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.success-message {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  width: 420px;
+  opacity: 0;
+  visibility: hidden;
+}
+.success-alert {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  height: fit-content;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: #c8e6c9;
+  border: 2px solid #98e49b;
+  color: black;
+}
+
+.success-message .confirmation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.success-message img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.delete-goal {
+  background-color: white;
+  border: 1px #d4d3d3 solid;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  gap: 15px;
+  height: 240px;
+  border-radius: 10px;
+}
+.delete-goal p {
+  width: 80%;
+}
+.delete-goal button {
+  padding: 10px 10px;
+}
+.delete-goal .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+.delete-goal img {
+  width: 50px;
+  height: auto;
+}
+#confirm-delete {
+  background-color: #fecaca;
+  color: #c02f2f;
+  font-weight: 600;
+}
+#cancel-delete {
+  background-color: #e5e7eb;
+  color: black;
+  font-weight: 600;
+}
+
+label {
+  font-weight: 500;
+  margin-top: 10px;
+}
+.lesson-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.goal-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.goal-title {
+  font-size: 17px;
+  cursor: pointer;
+}
+.goal-amount {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  color: rgb(59 130 246);
+}
+.goal-progress {
+  background-color: #efefef;
+  margin: 10px 0;
+}
+.progress-bar {
+  border: 2px solid rgb(59 130 246);
+}
+.goal-item:nth-child(3n + 1) .progress-bar {
+  border: 2px solid #834cef;
+}
+.goal-item:nth-child(3n + 1) .goal-amount {
+  color: #834cef;
+}
+.goal-item:nth-child(3n + 2) .progress-bar {
+  border: 2px solid #ff6779;
+}
+.goal-item:nth-child(3n + 2) .goal-amount {
+  color: #ff6779;
+}
+.goal-item:nth-child(3n) .progress-bar {
+  border: 2px solid #0085ff;
+}
+.goal-item:nth-child(3n) .goal-amount {
+  color: #0085ff;
+}
+.goal-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+}
+.goal-left {
+  font-size: 13px;
+  color: #d7d7d7;
+}
+.goal-status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.lesson-icon::after {
+  content: "▹";
+  color: rgb(59 130 246);
+  font-size: 30px;
+}
+.lesson-title {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.bottom {
+  margin-top: 20px;
+}
+
+.fa-plus {
+  position: relative;
+  right: 5px;
+}
+.top i {
+  font-size: 22px !important;
+}
+
+.view-all {
+  font-size: 14px !important;
+  cursor: pointer;
+  font-weight: 500;
+  color: #aeaeae;
+}
+.view-all:hover {
+  color: #0085ff;
+}
+.completed {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  background-color: white;
+  width: 350px;
+  height: fit-content;
+  position: absolute;
+  top: 20% !important;
+  left: 40%;
+  border: 1px #e6e6e6 solid;
+  border-radius: 10px;
+  max-height: 49%;
+  overflow: auto;
+  padding-bottom: 10px;
+}
+.completed .goal-item {
+  padding: 0 10px 0 20px;
+}
+
+.completed-active {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+.completed .goals-header {
+  padding: 15px 20px;
+  background-color: white;
+  z-index: 999;
+}
+.completed .fa-xmark {
+  position: relative;
+  top: 2px;
+  left: 10px;
+}
+.completed .goal-item {
+  margin-bottom: 20px;
+}
+.goals-header,
+.lesson-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+}
+
+@media screen and (min-width: 570px) and (max-width: 1060px) {
+  .dashboard-main {
+    width: 100% !important;
+    margin: auto;
+  }
+  .bottom-menu {
+    position: relative !important;
+    top: 200px;
+  }
+  .dashboard-item {
+    width: 30%;
+  }
+}
+.months {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+}
+@media screen and (min-width: 800px) {
+  .dashboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .dashboard-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    gap: 10px;
+    width: 80%;
+  }
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 20px;
+    height: 100vh;
+  }
+  .dashboard-items {
+    margin-top: 20px;
+    display: flex;
+    justify-self: start;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+  }
+  .dashboard-item {
+    width: 31.5%;
+  }
+  .amount {
+    font-size: 22px;
+  }
+  .revenuaCard {
+    width: 100%;
+  }
+  .dashboard-content {
+    padding: 0;
+  }
+
+  .dashboard-sidebar {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0;
+    height: 100vh;
+  }
+  .goals-header,
+  .lesson-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .goals-container {
+    max-height: 55%;
+    margin-bottom: 15px;
+  }
+
+  .lesson-container {
+    max-height: 45%;
+    overflow: auto;
+  }
+
+  .chart-container {
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+  }
+  .dashboard .scrollable-table {
+    max-height: 50%;
+    overflow: auto;
+  }
+}

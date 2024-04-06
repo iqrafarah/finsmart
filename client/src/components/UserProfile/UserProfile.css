@@ -1,0 +1,46 @@
+.user-profile-container {
+  margin: 20px;
+  border-radius: 5px;
+}
+.user-profile-container form {
+  margin-top: 30px;
+}
+.user-profile-container form button {
+  width: fit-content;
+}
+form input {
+  background-color: transparent !important;
+}
+.logout {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  gap: 10px;
+}
+.profile-btn {
+  margin-top: 10px;
+}
+.user-profile-container .form-group i {
+  position: relative;
+  top: 35px;
+  font-size: 14px;
+  left: 10px;
+}
+.user-profile-container .form-group input {
+  padding-left: 35px !important;
+}
+@media screen and (min-width: 800px) {
+  .user-profile {
+    display: flex;
+    gap: 20px;
+  }
+  .user-profile-container {
+    width: 80%;
+  }
+  .profile-item span {
+    font-size: 16px;
+  }
+  .logout {
+    display: none;
+  }
+}

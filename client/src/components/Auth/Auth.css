@@ -1,0 +1,127 @@
+.register-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  height: 100vh;
+}
+.register-image {
+  display: none;
+}
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.form-group input {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: inset rgba(0, 0, 0, 0.16) 0 0 2px 0px;
+  background-color: white;
+}
+
+.register-form .logo {
+  width: 65px;
+  margin: 0 auto;
+}
+.register-form h2 {
+  font-weight: 500;
+  font-size: 22px;
+}
+.register-form .intro-p {
+  margin-bottom: 20px;
+}
+.intro-p a {
+  font-weight: 600;
+  color: rgb(59 130 246);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+::placeholder {
+  color: black;
+}
+
+.main-btn {
+  margin-bottom: 20px;
+}
+
+.success {
+  color: #4caf50;
+  margin: 10px 0;
+  text-align: left;
+}
+.forgot-pass {
+  font-weight: 600;
+  color: rgb(59 130 246);
+  text-align: right;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.messages {
+  display: flex;
+  justify-content: space-between;
+}
+.forgot-pass {
+  margin-bottom: 20px;
+}
+.auth-btn {
+  width: 100% !important;
+  padding: 15px 24px !important;
+}
+.register-container {
+  background-image: url("../../assets/waves-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 0;
+  height: 100vh;
+}
+
+@media screen and (min-width: 770px) {
+  .register-image {
+    display: block;
+    background-image: url("https://images.unsplash.com/photo-1462556791646-c201b8241a94?q=80&w=2065&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 60%;
+    padding: 20px;
+  }
+  .register-form {
+    width: 40%;
+    display: flex;
+    padding: 0 5vw;
+    margin-top: 110px;
+    text-align: left;
+  }
+
+  .register-form .logo {
+    position: absolute;
+    left: 65px;
+    top: 20px;
+    width: 60px;
+  }
+
+  .register-form h2 {
+    font-size: 30px;
+  }
+  .register-form .intro-p {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  .register-container {
+    padding: 0;
+  }
+}
